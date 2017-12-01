@@ -37,6 +37,10 @@ class SelfBalanceTree{
 		root = insert(data, root);
 	}
 
+	public void delete(Fraction data){
+		root = delete(data, root);
+	}
+
 	/*
 	if greater than, return 1
 	if less than, return 2
@@ -59,6 +63,15 @@ class SelfBalanceTree{
 				else t = doubleWithRightChild(t);
 		}else ;
 		t.height = max(height(t.left),height(t.right))+1;
+		return t;
+	}
+
+	private BNode delete(Fraction x, BNode t){
+		if(t== null){
+			System.out.println("No tree to delete from.");
+			t = null;
+		}
+
 		return t;
 	}
 

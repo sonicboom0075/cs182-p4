@@ -7,6 +7,9 @@ class Test{
 	public static void main (String [] args){
 		String dataLine = readNumbers();
 		SelfBalanceTree sbt = new SelfBalanceTree();
+		Fraction f = new Fraction(4);
+		System.out.println("-----------------------");
+		sbt.delete(f);
 		System.out.println("-----------------------");
 		System.out.println("dataLine: " +dataLine);
 		System.out.println("-----------------------");
@@ -27,6 +30,9 @@ class Test{
 		sbt.inorder();
 		System.out.println("\n");
 		System.out.println("-----------------------");
+		sbt.delete(f);
+		sbt.inorder();
+	  System.out.println("\n-----------------------");
 		//System.out.println(dataLine);
 		//System.out.println(Arrays.toString(makeSArray(dataLine)));
 	}

@@ -18,6 +18,6 @@ class BNode{
 	}
 
 	public String toString(){
-		return data +"|" +height;
+		return data +"[" +height +"] ";
 	}
 }
