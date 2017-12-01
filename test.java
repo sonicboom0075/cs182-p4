@@ -27,8 +27,6 @@ class Test{
 		sbt.inorder();
 		System.out.println("\n");
 		System.out.println("-----------------------");
-		//System.out.println(dataLine);
-		//System.out.println(Arrays.toString(makeSArray(dataLine)));
 	}
 
 	//readNumbers
