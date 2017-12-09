@@ -1,0 +1,30 @@
+V2: Fix BNode to have quantity
+-if you have 1 node, you have at least 1 quantity
+-if quantity=0, best remove it
+-if they are the same, add to quantity
+
+V3: Implement parsing of quantities from the input
+-if Fraction is equal in data, add each others quantity
+
+V4: When you delete a node, it should subtract from the quantity
+-do not delink null unless final quantity is 0, otherwise subtract quantity
+
+V5: Install the cross section
+- create new class
+- Fraction array
+- each cell in the array is a SBT
+
+V6: clean main program and fully implement cross section
+
+V7: incorporate stack
+- implement into cross section class?
+- one stack for every tree
+
+V8: install Scanner
+- run with data from V4
+
+v9: add unit to fraction
+- modify node
+- all classes except stack are modified to work with units
+
+-------------

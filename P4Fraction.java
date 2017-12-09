@@ -28,10 +28,6 @@ class Fraction {
 		den = f.den/gcd;
 	}
 
-	int findValue(){
-		return num/den;
-	}
-
 	static int findGCD(int n, int m){
 		if(n==0){
 			return m;
@@ -55,6 +51,8 @@ class Fraction {
 			return s;
 		}else if(num == 0){
 			return "0";
+		}else if(num>den){
+			return num/den +" " +num%den +"/" +den;
 		}
 		return num +"/" +den;
 	}
